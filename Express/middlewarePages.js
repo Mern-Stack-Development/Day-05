@@ -8,7 +8,7 @@ app.use('/pages', function(req, res, next) {
 });
 
 app.get('/pages', function(req, res){
-    res.send('Pages');
+    res.send('This is Pages File');
 });
 
 app.listen(8080, () => {

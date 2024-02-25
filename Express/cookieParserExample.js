@@ -7,7 +7,7 @@ const app = express();
 app.use(cookieParser());
 
 app.get('/dashboard', (req, res) => {
-  const userId = req.cookies.user;
+  const userId = req.cookies.user_name;
   // Retrieve user data from the database based on the userId
   res.send(`Welcome to the dashboard, User ${userId}!`);
 });
