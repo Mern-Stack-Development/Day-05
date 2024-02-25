@@ -3,12 +3,13 @@ const express = require('express');
 var app = express();
 
 app.use('/pages', function(req, res, next) {
-    console.log("Request received at"+Date.now());
+    console.log("Request received at "+Date.now());
     next();
 });
 
 app.get('/pages', function(req, res){
-    res.send('This is Pages File');
+    res.send('This is the Pages File');
+    console.log("Response send at "+Date.now());
 });
 
 app.listen(8080, () => {
