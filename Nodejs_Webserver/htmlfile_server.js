@@ -16,9 +16,6 @@ http.createServer(function(req, res) {
             //console.log(data)
         }
         res.end()
-
     })
-
 }).listen(8080);
-
 console.log('server running');
