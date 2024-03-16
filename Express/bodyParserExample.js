@@ -10,7 +10,7 @@ app.use(bodyParser.urlencoded({ extended: true }));
 app.post('/register', (req, res) => {
   const { username, email, password } = req.body;
   // Process the registration data and store it in the database
-  res.send(`User ${username} registered successfully!`);
+  res.send(`User ${username} registered successfully! Email is ${email}`);
 });
 
 app.listen(8080, () => {

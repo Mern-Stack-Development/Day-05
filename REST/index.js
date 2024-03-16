@@ -1,6 +1,5 @@
 var express = require('express');
 
-
 var app = express();
 
 //Require the Router we defined in movies.js
